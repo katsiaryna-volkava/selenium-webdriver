@@ -10,16 +10,7 @@ public class SetUpsAndTearDowns {
 
     public WebDriver driver;
 
-    @BeforeMethod(alwaysRun = true)
-    public void browserSetup() {
-        driver = new ChromeDriver();
-    }
 
-    @AfterMethod(alwaysRun = true)
-    public void browserClose() {
-        driver.quit();
-        driver = null;
-    }
 
 
 }
