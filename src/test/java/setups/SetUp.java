@@ -38,6 +38,5 @@ public class SetUp {
     @AfterMethod
     public void browserClose() {
         driver.quit();
-        driver = null;
     }
 }

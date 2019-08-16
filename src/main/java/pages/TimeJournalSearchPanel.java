@@ -9,11 +9,8 @@ import utils.WaitUtils;
 
 public class TimeJournalSearchPanel extends BasePage {
 
-
     private static final String USER_FULL_NAME_XPATH = "//following::span[@class='name']//span[@class='display-value']";
-    //private static final String USER_FULL_NAME_XPATH = "//span/section[@class='drop-down-display']";
 
-    //  @FindBy(xpath = "//following::span[@class='name']//span[@class='display-value']")
     @FindBy(xpath = USER_FULL_NAME_XPATH)
     private WebElement userFullName;
 
