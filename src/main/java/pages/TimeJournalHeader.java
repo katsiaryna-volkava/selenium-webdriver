@@ -5,13 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class TimeJournalHeader {
+public class TimeJournalHeader extends BasePage{
 
-    private WebDriver driver;
-
-    public TimeJournalHeader(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+    public TimeJournalHeader(WebDriver driver, WebElement dashboardControl) {
+        super(driver);
+        this.dashboardControl = dashboardControl;
     }
 
     @FindBy(xpath = "//a[@href='/dashboard/']")
@@ -22,5 +20,9 @@ public class TimeJournalHeader {
         return new DashboardsSubheaders();
     }
 
+    @Override
+    protected void waitForPageToBeLoaded() {
+
+    }
 
 }

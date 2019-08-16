@@ -17,16 +17,12 @@ public class TimeJournalSearchPanel extends BasePage {
     @FindBy(xpath = USER_FULL_NAME_XPATH)
     private WebElement userFullName;
 
-
-    public TimeJournalSearchPanel(WebDriver driver) {
+    public TimeJournalSearchPanel(WebDriver driver, WebElement userFullName) {
         super(driver);
     }
 
-
-
-
     public String findLoggedUserFullName() {
-        String loggedUserNameIs = driver.findElement(By.xpath("//following::span[@class='name']//span[@class='display-value']")).getText();
+        String loggedUserNameIs = userFullName.getText();
         return loggedUserNameIs;
     }
 

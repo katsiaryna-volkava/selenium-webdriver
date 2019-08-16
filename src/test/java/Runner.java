@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Runner {
 
-    private JavascriptExecutor js;
+/*    private JavascriptExecutor js;
 
     @FindBy(xpath = "//span/section[@class='drop-down-display']")
      private WebElement userName;
@@ -28,5 +28,5 @@ public class Runner {
     public static void main(String[] args) throws InterruptedException {
         Runner runner = new Runner();
         runner.testing();
-    }
+    }*/
 }
