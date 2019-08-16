@@ -23,10 +23,7 @@ public class TimeJournalSearchPanel extends BasePage {
     }
 
 
-    public TimeJournalSearchPanel goToTJAsParticularUser() {
-        driver.get("https://qa.time.epam.com/api/login?make-me=4060741400306100872");
-        return this;
-    }
+
 
     public String findLoggedUserFullName() {
         String loggedUserNameIs = driver.findElement(By.xpath("//following::span[@class='name']//span[@class='display-value']")).getText();
