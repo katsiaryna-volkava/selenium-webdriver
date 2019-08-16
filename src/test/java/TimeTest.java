@@ -1,8 +1,10 @@
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
+
 import org.testng.annotations.Test;
 import pages.TimeJournalSearchPanel;
-
 public class TimeTest {
 
     private WebDriver driver;
@@ -13,7 +15,7 @@ public class TimeTest {
         Assert.assertEquals(actualUserName, "Katsiaryna Volkava");
     }
 
- /*   @Test
+  /*  @Test
     @Deprecated
     public void checkDashboardsAvailability() throws InterruptedException {
         new TimeJournalHeader(driver).goToDashboardsSection();

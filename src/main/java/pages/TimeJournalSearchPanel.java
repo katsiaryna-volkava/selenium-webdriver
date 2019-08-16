@@ -17,7 +17,7 @@ public class TimeJournalSearchPanel extends BasePage {
     @FindBy(xpath = USER_FULL_NAME_XPATH)
     private WebElement userFullName;
 
-    public TimeJournalSearchPanel(WebDriver driver, WebElement userFullName) {
+    public TimeJournalSearchPanel(WebDriver driver) {
         super(driver);
     }
 
